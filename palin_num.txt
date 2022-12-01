@@ -1,0 +1,10 @@
+int64_t __x = x;
+int tmp = x;
+int64_t rev_x = 0;
+
+while (tmp > 0)
+{
+    rev_x = 10 * rev_x + tmp % 10;
+    tmp /= 10;
+}
+return __x == rev_x;
